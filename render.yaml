@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: super-casino-backend
+    env: java
+    buildCommand: cd backend && ./mvnw clean package -DskipTests
+    startCommand: cd backend && java -jar target/super-casino-1.0-SNAPSHOT.jar
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: TELEGRAM_BOT_USERNAME
+        value: testingWHA_bot
+      - key: TELEGRAM_BOT_TOKEN
+        value: 7658455128:AAFo78WyqQnw0HQjp3nDbSLtIToty1Lxh8M
+      - key: TELEGRAM_BOT_WEBAPP_URL
+        value: https://mini-app-v555.onrender.com 

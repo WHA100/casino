@@ -1,0 +1,33 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+application-local.yml
+
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build
+dist/
+build/ 
