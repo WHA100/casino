@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+telegram:
+  bot:
+    username: ${TELEGRAM_BOT_USERNAME}
+    token: ${TELEGRAM_BOT_TOKEN}
+    webapp-url: ${TELEGRAM_BOT_WEBAPP_URL}
+
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: / 
