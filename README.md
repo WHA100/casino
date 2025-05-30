@@ -77,4 +77,4 @@ Frontend размещен на render.com и автоматически депл
 
 ## Лицензия
 
-MIT 
+MIT # Casino
